@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+/*---el asterisco le aplica a todo el codigo html---*/
+
+/**-----BODY-----*/
+body {
+    font-family: "Caudex", serif;
+    font-weight: 200;
+}
+
+/*gorosor de fuente*/
+p::selection {
+    background-color: #f1f1f1;
+    color: #8b6576;
+}
+
+/*?----- HEADER -----*/
+nav {
+    background-color: #131313 !important;
+}
+
+.nav-link {
+    color: hsl(333, 17%, 50%) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+
+}
+
+.nav-item {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.boton {
+    border-color: hsl(333, 17%, 50%);
+    color: hsl(333, 17%, 50%);
+}
+
+
+/*!----- MAIN -----*/
+
+/* .hero {
+    background-image: url(../img/photo-1705475025559-ad8efdedc74f.jpg);
+    color: #f1cfde;
+    text-align: center;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+} */
+
+/* .hero h2 {
+    font-size: 55px;
+    padding: 20px;
+}
+
+.hero p {
+    font-size: 25px;
+    background-color: #131313c0;
+    color: #c594aa;
+    border-radius: 10px;
+} */
+
+.aside {
+    display: flex;
+    gap: 2rem;
+    /* espacio entre aside y secciones */
+    padding: 1rem;
+}
+
+.aside aside {
+    width: 450px;
+    background-color: #f0f0f0;
+    /* color de fondo opcional */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.aside aside h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.aside aside h2 button {
+    color: #131313 !important;
+    background-color: white !important;
+}
+
+.aside aside ol li {
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.aside aside ol li a {
+    text-decoration: none;
+    color: #131313;
+}
+
+.accordion-button:focus,
+.accordion-button:hover {
+    border-color: #c594aa77;
+    box-shadow: 0 0 0 0.25rem #c594aa77;
+}
+
+.accordion-button:not(.collapsed) {
+    border-color: inherit;
+    box-shadow: none;
+    background-color: inherit;
+}
+
+.tarjetas-secciones {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tarjetas-secciones .tarjetas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetas-secciones section h3 {
+    text-align: center;
+    background-color: #c594aa77;
+    color: #131313;
+    font-size: 30px;
+}
+
+.productos h2 {
+    text-align: center;
+    background-color: #c594aa77;
+    color: #131313;
+    font-size: 40px;
+
+}
+
+.productos h3 {
+    text-align: center;
+    background-color: #c594aa77;
+    color: #131313;
+    font-size: 30px;
+}
+
+.productos p {
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    color: #131313;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.tarjetas-inicio {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetas-inicio div {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    height: 375px;
+}
+
+.tarjetas-inicio div img {
+    width: 250px;
+    height: 250px;
+}
+
+.tarjetas-inicio div a {
+    text-decoration: none;
+    color: white;
+    background-color: #c594aa;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tarjetas-inicio h4 {
+    color: #131313;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.tarjetas {
+    margin: 15px;
+    padding: 15px;
+}
+
+.tarjetas div {
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 15px;
+    padding: 15px;
+    height: 375px;
+}
+
+.tarjetas div img {
+    width: 250px;
+    height: 250px;
+}
+
+.tarjetas div a {
+    text-decoration: none;
+    color: white;
+    background-color: #c594aa;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.tarjetas div a:hover {
+    font-size: 25px;
+}
+
+.tarjetas h4 {
+    color: #131313;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.nosotros p {
+    font-size: 30px;
+    background-color: #c594aa77;
+    color: #131313;
+    border-radius: 12px;
+    width: 500px;
+    height: 350px;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.nosotros img {
+    width: 550px;
+    height: 550px;
+}
+
+.nosotros-titulo {
+    text-align: center;
+    background-color: #c594aa77;
+    color: #131313;
+    font-size: 30px;
+}
+
+.testimonios h4 {
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #131313;
+    font-size: 30px;
+
+}
+
+.grid-testimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 20px;
+    background-color: #f1f1f1;
+    color: #131313;
+    padding: 20px;
+}
+
+.testimonio {
+    background-color: white;
+    color: #131313;
+    font-style: italic;
+    margin: 20px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+    font-size: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.formulario form {
+    margin: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.formulario form div label {
+    font-size: 22px;
+}
+
+.formulario form div input {
+    width: 500px;
+    height: 40px;
+}
+
+.formulario form div .check {
+    width: 20px;
+    height: 23px;
+}
+
+.form-check {
+    padding-left: 23px;
+}
+
+.form-check .form-check-input {
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.formulario-personalizados {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-personalizados form {
+    flex-direction: column;
+    margin: 20px;
+    font-size: 18px;
+    color: #131313;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.formulario-personalizados form div textarea {
+    width: 500px;
+}
+
+.formulario-personalizados form div {
+    padding: 5px;
+}
+
+.formulario-personalizados form div label {
+    width: 500px;
+}
+
+.formulario-personalizados form div input {
+    width: 500px;
+    height: 40px;
+}
+
+.formulario-personalizados form div .check {
+    width: 20px;
+    height: 23px;
+}
+
+.formulario-personalizados form div .provincia {
+    width: 500px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+/**----- FOOTER -----*/
+footer {
+    background-color: #131313;
+}
+
+footer h5 {
+    color: hsl(333, 17%, 50%);
+    border-bottom: 1px solid hsl(333, 17%, 50%);
+    font-size: 30px;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+}
+
+.redes div {
+    color: white;
+    width: 275px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    line-height: 30px;
+    /*alto de la linea del contenido*/
+}
+
+.redes .caja-footer {
+    padding: 20px;
+}
+
+.redes .caja-footer h6 {
+    font-size: 20px;
+}
+
+.redes .caja-footer p {
+    font-size: 15px;
+}
+
+.redes .caja-footer a img {
+    margin-bottom: 5px;
+}
+
+.redes .logo-footer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+}
+
+@media screen and (max-width: 1300px) {
+    .tarjetas-inicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .tarjetas div {
+        justify-items: center;
+    }
+
+    .tarjetas-secciones .tarjetas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .tarjetas-secciones .tarjetas {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items: center;
+    }
+
+    .redes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 120px 120px;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .redes div {
+        color: white;
+        height: 100%;
+        width: 100%;
+        line-height: 25px;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .redes .caja-footer {
+        padding: 0%;
+    }
+
+    .redes .caja-footer h6 {
+        font-size: 13px;
+    }
+
+    .redes .caja-footer p {
+        font-size: 11px;
+    }
+
+    .redes .logo-footer img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonios h4 {
+        font-size: 20px;
+    }
+
+    .testimonio {
+        font-size: 15px;
+    }
+
+    .grid-testimonios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+
+    }
+
+    .nosotros p {
+        order: 1;
+        font-size: 20px;
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .nosotros img {
+        order: 2;
+        width: 300px;
+        height: 300px;
+    }
+
+    .nosotros-titulo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .productos h2 {
+        font-size: 30px;
+    }
+
+    .productos h3 {
+        font-size: 20px;
+    }
+
+    .fixed img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .productos p {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .tarjetas div {
+        height: auto;
+        width: auto;
+        margin: 30px;
+    }
+
+    .tarjetas div img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tarjetas div a {
+        font-size: 15px;
+    }
+
+    .tarjetas h4 {
+        font-size: 15px;
+    }
+
+    .tarjetas-inicio div {
+        height: auto;
+        width: auto;
+        margin: 30px;
+    }
+
+    .tarjetas-inicio div img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tarjetas-inicio div a {
+        font-size: 15px;
+    }
+
+    .tarjetas-inicio h4 {
+        font-size: 15px;
+    }
+
+    .redes .caja-footer a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .redes .caja-footer img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .redes .logo-footer img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aside aside {
+        width: 100%;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .testimonios h4 {
+        font-size: 20px;
+    }
+
+    .testimonio h5 {
+        font-size: 15px;
+    }
+
+    .testimonio {
+        font-size: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .grid-testimonios {
+        gap: 1px;
+        padding: 1px;
+    }
+
+    footer h5 {
+        font-size: 20px;
+    }
+
+    .productos h2 {
+        font-size: 20px;
+    }
+
+    .productos h3 {
+        font-size: 15px;
+    }
+
+    .productos p {
+        font-size: 18px;
+    }
+
+    .tarjetas-secciones .tarjetas div {
+            width: 60%;
+            max-width: 300px;
+            padding: 10px;
+        }
+}
+
+@media screen and (max-width: 520px) {
+    .tarjetas div {
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+
+    .tarjetas div img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .tarjetas-inicio div {
+        height: auto;
+        width: auto;
+        margin: 10px;
+    }
+
+    .tarjetas-inicio div img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .redes .caja-footer h6 {
+        font-size: 12px;
+    }
+
+    .redes .caja-footer p {
+        font-size: 10px;
+    }
+
+    .tarjetas-secciones section h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tarjetas div img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tarjetas-inicio div img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .redes div {
+        line-height: 15px;
+    }
+
+}
