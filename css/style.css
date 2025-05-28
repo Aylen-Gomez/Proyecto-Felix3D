@@ -45,49 +45,50 @@ nav {
     border-color: hsl(333, 17%, 50%);
     color: hsl(333, 17%, 50%);
 }
+.bi-bag-heart-fill{
+    margin: 10px;
+    font-size: 40px;
+    color: hsl(333, 17%, 50%);
+}
+.d-flex{
+    align-items: center;
+}
 
 
 /*!----- MAIN -----*/
-
-/* .hero {
-    background-image: url(../img/photo-1705475025559-ad8efdedc74f.jpg);
-    color: #f1cfde;
+.hero {
     text-align: center;
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+}
 
-} */
+.hero h2 {
+    font-size: 35px;
+    background-color: #8b657688;
+    border-radius: 20px;
+    padding: 5px;
 
-/* .hero h2 {
-    font-size: 55px;
-    padding: 20px;
 }
 
 .hero p {
     font-size: 25px;
-    background-color: #131313c0;
-    color: #c594aa;
-    border-radius: 10px;
-} */
+    background-color: #8b657688;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.bi-arrow-return-right {
+    color: #8b6576;
+}
+
 
 .aside {
     display: flex;
     gap: 2rem;
-    /* espacio entre aside y secciones */
     padding: 1rem;
 }
 
 .aside aside {
     width: 450px;
     background-color: #f0f0f0;
-    /* color de fondo opcional */
     padding: 1rem;
     border-radius: 8px;
 }
@@ -114,6 +115,7 @@ nav {
     text-decoration: none;
     color: #131313;
 }
+
 
 .accordion-button:focus,
 .accordion-button:hover {
@@ -237,6 +239,10 @@ nav {
     padding: 5px;
 }
 
+.tarjetas-inicio div a:hover {
+    font-size: 25px;
+}
+
 .tarjetas div a:hover {
     font-size: 25px;
 }
@@ -260,12 +266,12 @@ nav {
 }
 
 .nosotros p {
-    font-size: 30px;
+    font-size: 25px;
     background-color: #c594aa77;
     color: #131313;
     border-radius: 12px;
-    width: 500px;
-    height: 350px;
+    width: 50%;
+    height: 50%;
     margin: 15px;
     padding: 30px;
     text-align: center;
@@ -274,6 +280,7 @@ nav {
 .nosotros img {
     width: 550px;
     height: 550px;
+    border-radius: 20px;
 }
 
 .nosotros-titulo {
@@ -301,6 +308,17 @@ nav {
     padding: 20px;
 }
 
+.testimonio::before {
+    content: "“";
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 100px;
+    color: rgba(155, 155, 155, 0.486);
+    z-index: 0;
+    pointer-events: none;
+}
+
 .testimonio {
     background-color: white;
     color: #131313;
@@ -311,6 +329,8 @@ nav {
     border-radius: 12px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
     font-size: 20px;
+    z-index: 1;
+    position: relative;
 }
 
 .formulario {
@@ -443,7 +463,7 @@ footer h5 {
     border-radius: 30%;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
     .tarjetas-inicio {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -669,10 +689,10 @@ footer h5 {
     }
 
     .tarjetas-secciones .tarjetas div {
-            width: 60%;
-            max-width: 300px;
-            padding: 10px;
-        }
+        width: 60%;
+        max-width: 300px;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 520px) {
