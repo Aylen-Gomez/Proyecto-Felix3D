@@ -45,12 +45,14 @@ nav {
     border-color: hsl(333, 17%, 50%);
     color: hsl(333, 17%, 50%);
 }
-.bi-bag-heart-fill{
+
+.bi-bag-heart-fill {
     margin: 10px;
     font-size: 40px;
     color: hsl(333, 17%, 50%);
 }
-.d-flex{
+
+.d-flex {
     align-items: center;
 }
 
@@ -332,7 +334,6 @@ nav {
     z-index: 1;
     position: relative;
 }
-
 .formulario {
     display: flex;
     justify-content: center;
@@ -367,7 +368,7 @@ nav {
     margin-left: 2px;
     margin-right: 5px;
     margin-top: 2px;
-}
+} 
 
 .formulario-personalizados {
     display: flex;
@@ -464,6 +465,14 @@ footer h5 {
 }
 
 @media screen and (max-width: 1350px) {
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
     .tarjetas-inicio {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -587,6 +596,32 @@ footer h5 {
 }
 
 @media screen and (max-width: 700px) {
+    .formulario form div input {
+        width: 100%; /* Ahora el input ocupa todo el ancho del contenedor */
+    }
+
+    .formulario form div label {
+        font-size: 18px;
+    }
+
+    .formulario form {
+        padding: 10px;
+    }
+    .formulario-personalizados form {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .formulario-personalizados form div input,
+    .formulario-personalizados form div label,
+    .formulario-personalizados form div textarea,
+    .formulario-personalizados form div .provincia {
+        width: 100%;
+    }
+
+    .formulario-personalizados form div {
+        padding: 3px;
+    }
 
     .tarjetas div {
         height: auto;
