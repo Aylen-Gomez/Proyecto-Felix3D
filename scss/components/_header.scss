@@ -1,0 +1,28 @@
+nav {
+    background-color: #131313 !important;
+
+    .nav-item {
+        font-size: 20px;
+        margin: 15px;
+
+        .nav-link {
+            color: hsl(333, 17%, 50%) !important;
+
+            &:hover {
+                color: white !important;
+            }
+        }
+    }
+
+    form {
+        .d-flex {
+            align-items: center;
+        }
+    }
+}
+
+.bi-bag-heart-fill {
+    margin: 10px;
+    font-size: 30px;
+    color: hsl(333, 17%, 50%) !important;
+}

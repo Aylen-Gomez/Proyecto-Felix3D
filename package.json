@@ -1,0 +1,19 @@
+{
+  "name": "preentrega1-gomez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aylen-Gomez/Proyecto-Felix3D.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aylen-Gomez/Proyecto-Felix3D/issues"
+  },
+  "homepage": "https://github.com/Aylen-Gomez/Proyecto-Felix3D#readme",
+  "description": ""
+}

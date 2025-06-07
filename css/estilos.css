@@ -1,0 +1,414 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.boton {
+  border-color: hsl(333, 17%, 50%);
+  color: hsl(333, 17%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Caudex", serif;
+  font-weight: 200;
+}
+
+p::selection {
+  background-color: #f1f1f1;
+  color: #8b6576;
+}
+
+nav {
+  background-color: #131313 !important;
+}
+nav .nav-item {
+  font-size: 20px;
+  margin: 15px;
+}
+nav .nav-item .nav-link {
+  color: hsl(333, 17%, 50%) !important;
+}
+nav .nav-item .nav-link:hover {
+  color: white !important;
+}
+nav form .d-flex {
+  align-items: center;
+}
+
+.bi-bag-heart-fill {
+  margin: 10px;
+  font-size: 30px;
+  color: hsl(333, 17%, 50%) !important;
+}
+
+.hero {
+  text-align: center;
+}
+.hero div h1 {
+  font-size: 35px;
+  background-color: rgba(139, 101, 118, 0.5333333333);
+  border-radius: 20px;
+  padding: 5px;
+}
+.hero div p {
+  font-size: 25px;
+  background-color: rgba(139, 101, 118, 0.5333333333);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.productos-destacados .tarjetas-inicio {
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.productos-destacados .tarjetas-inicio div {
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  height: 375px;
+}
+.productos-destacados .tarjetas-inicio div img {
+  width: 250px;
+  height: 250px;
+}
+.productos-destacados .tarjetas-inicio div h3 {
+  color: #131313;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.productos-destacados .tarjetas-inicio div a {
+  text-decoration: none;
+  color: white;
+  background-color: #c594aa;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.productos-destacados .tarjetas-inicio div a:hover {
+  font-size: 25px;
+}
+.productos-destacados h2 {
+  text-align: center;
+  background-color: rgba(197, 148, 170, 0.4666666667);
+  color: #131313;
+  font-size: 30px;
+}
+
+.nosotros-titulo {
+  text-align: center;
+  color: #131313;
+  font-size: 30px;
+}
+.nosotros-titulo h2 {
+  background-color: rgba(197, 148, 170, 0.4666666667);
+}
+
+.nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.nosotros img {
+  width: 550px;
+  height: 550px;
+  border-radius: 20px;
+}
+.nosotros p {
+  font-size: 25px;
+  background-color: rgba(197, 148, 170, 0.4666666667);
+  color: #131313;
+  border-radius: 12px;
+  width: 50%;
+  height: 50%;
+  margin: 15px;
+  padding: 30px;
+  text-align: center;
+}
+
+.testimonios h2 {
+  text-align: center;
+  background-color: #f1f1f1;
+  color: #131313;
+  font-size: 30px;
+}
+.testimonios .grid-testimonios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+  gap: 20px;
+  background-color: #f1f1f1;
+  color: #131313;
+  padding: 20px;
+}
+.testimonios .grid-testimonios .testimonio {
+  background-color: white;
+  color: #131313;
+  font-style: italic;
+  margin: 20px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+  font-size: 20px;
+  z-index: 1;
+  position: relative;
+}
+.testimonios .grid-testimonios .testimonio p {
+  font-size: 20px;
+}
+.testimonios .grid-testimonios .testimonio h3 {
+  font-size: 15px;
+}
+.testimonios .grid-testimonios .testimonio::before {
+  content: "“";
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 100px;
+  color: rgba(155, 155, 155, 0.486);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+.bi-arrow-return-right {
+  color: #8b6576;
+}
+
+.aside {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+.aside aside {
+  width: 450px;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.aside aside div ol li {
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+.aside aside div ol li a {
+  text-decoration: none;
+  color: #131313;
+}
+.aside aside div h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.aside aside div h2 button {
+  color: #131313 !important;
+  background-color: white !important;
+}
+.aside aside div h2 button:focus {
+  border-color: rgba(197, 148, 170, 0.4666666667);
+  box-shadow: 0 0 0 0.25rem rgba(197, 148, 170, 0.4666666667);
+}
+.aside aside div h2 button:hover {
+  border-color: rgba(197, 148, 170, 0.4666666667);
+  box-shadow: 0 0 0 0.25rem rgba(197, 148, 170, 0.4666666667);
+}
+.aside aside div h2 button:not(.collapsed) {
+  border-color: inherit;
+  box-shadow: none;
+  background-color: inherit;
+}
+
+/**--- PRODUCTOS ---*/
+.tarjetas-secciones {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.tarjetas-secciones h2 {
+  text-align: center;
+  background-color: rgba(197, 148, 170, 0.4666666667);
+  color: #131313;
+  font-size: 30px;
+}
+.tarjetas-secciones .tarjetas {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 15px;
+}
+.tarjetas-secciones .tarjetas div {
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 15px;
+  padding: 15px;
+  height: 375px;
+}
+.tarjetas-secciones .tarjetas div img {
+  width: 250px;
+  height: 250px;
+}
+.tarjetas-secciones .tarjetas div h3 {
+  color: #131313;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.tarjetas-secciones .tarjetas div a {
+  text-decoration: none;
+  color: white;
+  background-color: #c594aa;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+}
+.tarjetas-secciones .tarjetas div a:hover {
+  font-size: 25px;
+}
+
+/*!--- PERSONALIZADOS-REGISTRATE-SERVICIOS---*/
+.productos h1 {
+  text-align: center;
+  background-color: rgba(197, 148, 170, 0.4666666667);
+  color: #131313;
+}
+.productos h2 {
+  text-align: center;
+  background-color: rgba(197, 148, 170, 0.4666666667);
+  color: #131313;
+  font-size: 30px;
+}
+.productos p {
+  font-size: 25px;
+  margin: 20px;
+  text-align: center;
+  color: #131313;
+  padding: 20px;
+}
+
+/*---REGISTRATE---*/
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.formulario form {
+  margin: 30px;
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+.formulario form div label {
+  font-size: 22px;
+}
+.formulario form div input {
+  width: 500px;
+  height: 40px;
+}
+.formulario form div .check {
+  width: 20px;
+  height: 23px;
+}
+.formulario form .form-check {
+  padding-left: 23px;
+}
+.formulario form .form-check .form-check-input {
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+/*---PERSONALIZADOS-SERVICIOS---*/
+.formulario-personalizados {
+  display: flex;
+  justify-content: center;
+}
+.formulario-personalizados form {
+  flex-direction: column;
+  margin: 20px;
+  font-size: 18px;
+  color: #131313;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.formulario-personalizados form div {
+  padding: 5px;
+}
+.formulario-personalizados form div label {
+  width: 500px;
+}
+.formulario-personalizados form div input {
+  width: 500px;
+  height: 40px;
+}
+.formulario-personalizados form div .provincia {
+  width: 500px;
+}
+.formulario-personalizados form div textarea {
+  width: 500px;
+}
+.formulario-personalizados form div .check {
+  width: 20px;
+  height: 23px;
+}
+
+footer {
+  background-color: #131313;
+}
+footer h2 {
+  color: hsl(333, 17%, 50%);
+  border-bottom: 1px solid hsl(333, 17%, 50%);
+  font-size: 30px;
+  text-align: center;
+}
+footer .redes {
+  display: flex;
+}
+footer .redes .logo-footer img {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+}
+footer .redes div {
+  color: white;
+  width: 275px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  line-height: 30px;
+}
+footer .redes .caja-footer {
+  padding: 20px;
+}
+footer .redes .caja-footer img {
+  margin-bottom: 5px;
+}
+footer .redes .caja-footer h3 {
+  font-size: 20px;
+}
+footer .redes .caja-footer p {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

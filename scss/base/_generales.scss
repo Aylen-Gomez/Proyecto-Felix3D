@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Caudex", serif;
+    font-weight: 200;
+}
+p::selection {
+    background-color: #f1f1f1;
+    color: #8b6576;
+}
