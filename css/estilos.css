@@ -411,4 +411,274 @@ footer .redes .caja-footer p {
   font-size: 15px;
 }
 
+@media screen and (max-width: 1350px) {
+  .hero div h1 {
+    font-size: 25px;
+  }
+  .hero div p {
+    font-size: 15px;
+  }
+  .productos-destacados .tarjetas-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .tarjetas-secciones .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .tarjetas-secciones .tarjetas div {
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .tarjetas-secciones .tarjetas {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+  }
+  footer .redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px;
+    gap: 5px;
+    padding: 10px;
+  }
+  footer .redes .logo-footer img {
+    width: 80px;
+    height: 80px;
+  }
+  footer .redes div {
+    color: white;
+    height: 100%;
+    width: 100%;
+    line-height: 25px;
+    margin: 0%;
+    padding: 0%;
+  }
+  footer .redes .caja-footer {
+    padding: 0%;
+  }
+  footer .redes .caja-footer h6 {
+    font-size: 13px;
+  }
+  footer .redes .caja-footer p {
+    font-size: 11px;
+  }
+  .testimonios h2 {
+    font-size: 20px;
+  }
+  .testimonios .grid-testimonios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  .testimonios .grid-testimonios .testimonio {
+    font-size: 15px;
+  }
+  .nosotros-titulo {
+    font-size: 20px;
+  }
+  .nosotros {
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+  .nosotros img {
+    order: 2;
+    width: 300px;
+    height: 300px;
+  }
+  .nosotros p {
+    order: 1;
+    font-size: 20px;
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .productos h1 {
+    font-size: 30px;
+  }
+  .productos p {
+    font-size: 22px;
+  }
+  .productos-destacados h2 {
+    font-size: 20px;
+  }
+  .testimonios .grid-testimonios .testimonio p {
+    font-size: 13px;
+  }
+  .testimonios .grid-testimonios .testimonio h3 {
+    font-size: 10px;
+  }
+  .fixed img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .formulario form {
+    padding: 10px;
+  }
+  .formulario form div label {
+    font-size: 18px;
+  }
+  .formulario form div input {
+    width: 100%;
+  }
+  .formulario-personalizados form {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .formulario-personalizados form div {
+    padding: 3px;
+  }
+  .formulario-personalizados form div input {
+    width: 100%;
+  }
+  .formulario-personalizados form div label {
+    width: 100%;
+  }
+  .formulario-personalizados form div textarea {
+    width: 100%;
+  }
+  .formulario-personalizados form div .provincia {
+    width: 100%;
+  }
+  .tarjetas-secciones .tarjetas div {
+    height: auto;
+    width: auto;
+    margin: 30px;
+  }
+  .tarjetas-secciones .tarjetas div img {
+    width: 150px;
+    height: 150px;
+  }
+  .tarjetas-secciones .tarjetas div h3 {
+    font-size: 15px;
+  }
+  .tarjetas-secciones .tarjetas div a {
+    font-size: 15px;
+  }
+  .productos-destacados .tarjetas-inicio div {
+    height: auto;
+    width: auto;
+    margin: 30px;
+  }
+  .productos-destacados .tarjetas-inicio div img {
+    width: 150px;
+    height: 150px;
+  }
+  .productos-destacados .tarjetas-inicio div h3 {
+    font-size: 15px;
+  }
+  .productos-destacados .tarjetas-inicio div a {
+    font-size: 15px;
+  }
+  footer .redes .logo-footer img {
+    width: 50px;
+    height: 50px;
+  }
+  footer .redes .caja-footer img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .aside {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .aside aside {
+    width: 100%;
+  }
+  .nosotros p {
+    font-size: 15px;
+  }
+  .testimonios .grid-testimonios {
+    gap: 1px;
+    padding: 1px;
+  }
+  .testimonios .grid-testimonios .testimonio {
+    font-size: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .testimonios .grid-testimonios .testimonio p {
+    font-size: 10px;
+  }
+  .testimonios .grid-testimonios .testimonio h3 {
+    font-size: 8px;
+  }
+  .testimonios h2 {
+    font-size: 20px;
+  }
+  footer h2 {
+    font-size: 20px;
+  }
+  .productos h1 {
+    font-size: 20px;
+  }
+  .productos h2 {
+    font-size: 15px;
+  }
+  .productos p {
+    font-size: 16px;
+  }
+  .productos-destacados h2 {
+    font-size: 15px;
+  }
+  .tarjetas-secciones .tarjetas div {
+    width: 60%;
+    max-width: 300px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .tarjetas-secciones .tarjetas div {
+    height: 210px;
+    width: 210px;
+    margin: 10px;
+  }
+  .tarjetas-secciones .tarjetas div img {
+    width: 100px;
+    height: 100px;
+  }
+  .productos-destacados .tarjetas-inicio div {
+    height: auto;
+    width: auto;
+    margin: 10px;
+  }
+  .productos-destacados .tarjetas-inicio div img {
+    width: 100px;
+    height: 100px;
+  }
+  footer .redes .caja-footer h3 {
+    font-size: 12px;
+  }
+  footer .redes .caja-footer p {
+    font-size: 10px;
+  }
+  .tarjetas-secciones h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .trajetas-secciones .tarjetas div img {
+    width: 80px;
+    height: 80px;
+  }
+  footer .redes div {
+    line-height: 15px;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */
