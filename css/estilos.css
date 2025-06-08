@@ -9,6 +9,7 @@
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 13px;
 }
 
 * {
@@ -55,20 +56,35 @@ nav form .d-flex {
   color: hsl(333, 17%, 50%);
 }
 
-.hero {
-  text-align: center;
-}
 .hero div h1 {
   font-size: 35px;
   background-color: rgba(197, 148, 170, 0.4666666667);
   border-radius: 20px;
   padding: 5px;
+  width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  transition-duration: 2s;
+  transition-property: width;
+}
+.hero div h1:hover {
+  width: 100%;
 }
 .hero div p {
   font-size: 25px;
   background-color: rgba(197, 148, 170, 0.4666666667);
   border-radius: 20px;
   padding: 5px;
+  width: 1200px;
+  max-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  transition-duration: 2s;
+  transition-property: width;
+}
+.hero div p:hover {
+  width: 100%;
 }
 
 .productos-destacados .tarjetas-inicio {
@@ -95,6 +111,9 @@ nav form .d-flex {
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 5px;
+}
+.productos-destacados .tarjetas-inicio div a {
+  transition: 1s;
 }
 .productos-destacados .tarjetas-inicio div a:hover {
   font-size: 25px;
@@ -196,6 +215,7 @@ nav form .d-flex {
 
 .aside {
   display: flex;
+  justify-content: left;
   gap: 2rem;
   padding: 1rem;
 }
@@ -250,6 +270,7 @@ nav form .d-flex {
   background-color: rgba(197, 148, 170, 0.4666666667);
   color: #131313;
   font-size: 30px;
+  border-radius: 13px;
 }
 .tarjetas-secciones .tarjetas {
   flex: 1;
@@ -277,6 +298,9 @@ nav form .d-flex {
   margin-top: 10px;
   padding: 5px;
 }
+.tarjetas-secciones .tarjetas div a {
+  transition: 1s;
+}
 .tarjetas-secciones .tarjetas div a:hover {
   font-size: 25px;
 }
@@ -286,12 +310,16 @@ nav form .d-flex {
   text-align: center;
   background-color: rgba(197, 148, 170, 0.4666666667);
   color: #131313;
+  margin: 0%;
+  padding: 5px;
 }
 .productos h2 {
   text-align: center;
   background-color: rgba(197, 148, 170, 0.4666666667);
   color: #131313;
   font-size: 30px;
+  margin-bottom: 2px;
+  padding: 5px;
 }
 .productos p {
   font-size: 25px;
@@ -306,13 +334,13 @@ nav form .d-flex {
 .formulario {
   display: flex;
   justify-content: center;
-  margin: 20px;
-  background-image: url(/img/fondo2.png);
+  background-image: url(../img/fondo2.png);
+  background-repeat: no-repeat;
 }
 .formulario form {
-  margin: 30px;
+  margin: 35px;
   background-color: #f1f1f1;
-  padding: 30px;
+  padding: 35px;
 }
 .formulario form div label {
   font-size: 22px;
@@ -325,23 +353,17 @@ nav form .d-flex {
   width: 20px;
   height: 23px;
 }
-.formulario form .form-check {
-  padding-left: 23px;
-}
-.formulario form .form-check .form-check-input {
-  margin-left: 2px;
-  margin-right: 5px;
-  margin-top: 2px;
-}
 
 /*---PERSONALIZADOS-SERVICIOS---*/
 .formulario-personalizados {
   display: flex;
   justify-content: center;
-  background-image: url(/img/fondo2.png);
+  background-image: url(../img/fondo2.png);
   background-repeat: no-repeat;
 }
 .formulario-personalizados form {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   margin: 20px;
   font-size: 18px;
@@ -349,25 +371,33 @@ nav form .d-flex {
   background-color: #f1f1f1;
   padding: 20px;
 }
-.formulario-personalizados form f div {
+.formulario-personalizados form div {
   padding: 5px;
 }
-.formulario-personalizados form f div label {
+.formulario-personalizados form div label {
   width: 500px;
 }
-.formulario-personalizados form f div input {
+.formulario-personalizados form div input {
   width: 500px;
   height: 40px;
 }
-.formulario-personalizados form f div .provincia {
+.formulario-personalizados form div .provincia {
   width: 500px;
 }
-.formulario-personalizados form f div textarea {
+.formulario-personalizados form div textarea {
   width: 500px;
 }
-.formulario-personalizados form f div .check {
+.formulario-personalizados form div .check {
   width: 20px;
   height: 23px;
+}
+.formulario-personalizados form div .form-check {
+  padding: 0%;
+}
+.formulario-personalizados form div .form-check .form-check-input {
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-top: 2px;
 }
 
 footer {

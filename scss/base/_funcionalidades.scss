@@ -6,6 +6,16 @@ $cuarto-color: #131313;
 $quinto-color: #f1f1f1;
 $sexto-color: #c594aa77;
 
+//*LISTAS
+$font-size:
+10px
+15px
+20px
+25px
+30px
+35px
+;
+
 //*EXTENDS
 %boton {
     text-decoration: none;
@@ -16,5 +26,12 @@ $sexto-color: #c594aa77;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 13px;
+}
+
+//*MIXIN
+@mixin flex($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
 }
 

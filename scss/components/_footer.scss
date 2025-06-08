@@ -4,7 +4,7 @@ footer {
     h2 {
         color:$segundo-color;
         border-bottom: 1px solid $segundo-color;
-        font-size: 30px;
+        font-size: nth($font-size, 5 );
         text-align: center;
     }
 
@@ -37,12 +37,12 @@ footer {
             }
 
             h3 {
-                font-size: 20px;
+                font-size: nth($font-size, 3);
 
             }
 
             p {
-                font-size: 15px;
+                font-size: nth($font-size , 2 );
 
             }
         }
