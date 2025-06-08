@@ -6,7 +6,7 @@ nav {
         margin: 15px;
 
         .nav-link {
-            color: hsl(333, 17%, 50%) !important;
+            color: $segundo-color !important;
 
             &:hover {
                 color: white !important;
@@ -24,5 +24,9 @@ nav {
 .bi-bag-heart-fill {
     margin: 10px;
     font-size: 30px;
-    color: hsl(333, 17%, 50%) !important;
+    color: $segundo-color !important;
+}
+.boton {
+    border-color: hsl(333, 17%, 50%);
+    color: hsl(333, 17%, 50%);
 }

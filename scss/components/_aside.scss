@@ -10,7 +10,7 @@
 
     aside {
         width: 450px;
-        background-color: #f0f0f0;
+        background-color: $quinto-color;
         padding: 1rem;
         border-radius: 8px;
 
@@ -24,7 +24,7 @@
 
                     a {
                         text-decoration: none;
-                        color: #131313;
+                        color: $cuarto-color;
                     }
                 }
             }
@@ -39,13 +39,13 @@
                     background-color: white !important;
 
                     &:focus {
-                        border-color: #c594aa77;
-                        box-shadow: 0 0 0 0.25rem #c594aa77;
+                        border-color: $sexto-color;
+                        box-shadow: 0 0 0 0.25rem $sexto-color;
                     }
 
                     &:hover {
-                        border-color: #c594aa77;
-                        box-shadow: 0 0 0 0.25rem #c594aa77;
+                        border-color: $sexto-color;
+                        box-shadow: 0 0 0 0.25rem $sexto-color;
                     }
 
                     &:not(.collapsed) {

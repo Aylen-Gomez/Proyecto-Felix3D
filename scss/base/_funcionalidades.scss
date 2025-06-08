@@ -1,4 +1,20 @@
-.boton {
-    border-color: hsl(333, 17%, 50%);
-    color: hsl(333, 17%, 50%);
+//*VARIABLES
+$primer-color: rgba(139, 101, 118, 0.5333333333);
+$segundo-color: hsl(333, 17%, 50%);
+$tercer-color: #c594aa;
+$cuarto-color: #131313;
+$quinto-color: #f1f1f1;
+$sexto-color: #c594aa77;
+
+//*EXTENDS
+%boton {
+    text-decoration: none;
+    color: white;
+    background-color: $tercer-color;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+

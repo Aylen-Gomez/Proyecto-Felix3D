@@ -1,8 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-.boton {
-  border-color: hsl(333, 17%, 50%);
-  color: hsl(333, 17%, 50%);
+.tarjetas-secciones .tarjetas div a, .productos-destacados .tarjetas-inicio div a {
+  text-decoration: none;
+  color: white;
+  background-color: #c594aa;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 * {
@@ -44,18 +50,23 @@ nav form .d-flex {
   color: hsl(333, 17%, 50%) !important;
 }
 
+.boton {
+  border-color: hsl(333, 17%, 50%);
+  color: hsl(333, 17%, 50%);
+}
+
 .hero {
   text-align: center;
 }
 .hero div h1 {
   font-size: 35px;
-  background-color: rgba(139, 101, 118, 0.5333333333);
+  background-color: rgba(197, 148, 170, 0.4666666667);
   border-radius: 20px;
   padding: 5px;
 }
 .hero div p {
   font-size: 25px;
-  background-color: rgba(139, 101, 118, 0.5333333333);
+  background-color: rgba(197, 148, 170, 0.4666666667);
   border-radius: 20px;
   padding: 5px;
 }
@@ -84,16 +95,6 @@ nav form .d-flex {
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 5px;
-}
-.productos-destacados .tarjetas-inicio div a {
-  text-decoration: none;
-  color: white;
-  background-color: #c594aa;
-  text-align: center;
-  font-size: 20px;
-  padding: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 .productos-destacados .tarjetas-inicio div a:hover {
   font-size: 25px;
@@ -200,7 +201,7 @@ nav form .d-flex {
 }
 .aside aside {
   width: 450px;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   padding: 1rem;
   border-radius: 8px;
 }
@@ -276,14 +277,6 @@ nav form .d-flex {
   margin-top: 10px;
   padding: 5px;
 }
-.tarjetas-secciones .tarjetas div a {
-  text-decoration: none;
-  color: white;
-  background-color: #c594aa;
-  text-align: center;
-  font-size: 20px;
-  padding: 5px;
-}
 .tarjetas-secciones .tarjetas div a:hover {
   font-size: 25px;
 }
@@ -306,6 +299,7 @@ nav form .d-flex {
   text-align: center;
   color: #131313;
   padding: 20px;
+  background-color: #f1f1f1;
 }
 
 /*---REGISTRATE---*/
@@ -313,6 +307,7 @@ nav form .d-flex {
   display: flex;
   justify-content: center;
   margin: 20px;
+  background-image: url(/img/fondo2.png);
 }
 .formulario form {
   margin: 30px;
@@ -343,6 +338,8 @@ nav form .d-flex {
 .formulario-personalizados {
   display: flex;
   justify-content: center;
+  background-image: url(/img/fondo2.png);
+  background-repeat: no-repeat;
 }
 .formulario-personalizados form {
   flex-direction: column;
@@ -352,23 +349,23 @@ nav form .d-flex {
   background-color: #f1f1f1;
   padding: 20px;
 }
-.formulario-personalizados form div {
+.formulario-personalizados form f div {
   padding: 5px;
 }
-.formulario-personalizados form div label {
+.formulario-personalizados form f div label {
   width: 500px;
 }
-.formulario-personalizados form div input {
+.formulario-personalizados form f div input {
   width: 500px;
   height: 40px;
 }
-.formulario-personalizados form div .provincia {
+.formulario-personalizados form f div .provincia {
   width: 500px;
 }
-.formulario-personalizados form div textarea {
+.formulario-personalizados form f div textarea {
   width: 500px;
 }
-.formulario-personalizados form div .check {
+.formulario-personalizados form f div .check {
   width: 20px;
   height: 23px;
 }
