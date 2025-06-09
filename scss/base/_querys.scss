@@ -295,8 +295,9 @@
             width: 100%;
         }
     }
-    .nosotros{
-        p{
+
+    .nosotros {
+        p {
             font-size: 15px;
         }
     }
@@ -319,6 +320,10 @@
                 h3 {
                     font-size: 8px;
                 }
+
+                &::before {
+                    font-size: 70px;
+                }
             }
         }
 
@@ -337,7 +342,8 @@
         h1 {
             font-size: 20px;
         }
-        h2{
+
+        h2 {
             font-size: 15px;
         }
 
@@ -347,6 +353,11 @@
     }
 
     .productos-destacados {
+        .tarjetas-inicio {
+            margin: 5px;
+            padding: 5px;
+        }
+
         h2 {
             font-size: 15px;
         }

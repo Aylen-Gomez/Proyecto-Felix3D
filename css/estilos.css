@@ -61,7 +61,7 @@ nav form .d-flex {
   background-color: rgba(197, 148, 170, 0.4666666667);
   border-radius: 20px;
   padding: 5px;
-  width: 1000px;
+  width: 60%;
   text-align: center;
   margin: 0 auto;
   transition-duration: 2s;
@@ -75,7 +75,7 @@ nav form .d-flex {
   background-color: rgba(197, 148, 170, 0.4666666667);
   border-radius: 20px;
   padding: 5px;
-  width: 1200px;
+  width: 90%;
   max-height: 100px;
   text-align: center;
   margin: 0 auto;
@@ -99,6 +99,12 @@ nav form .d-flex {
   padding: 15px;
   background-color: #f1f1f1;
   height: 375px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.productos-destacados .tarjetas-inicio div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .productos-destacados .tarjetas-inicio div img {
   width: 250px;
@@ -123,30 +129,39 @@ nav form .d-flex {
   background-color: rgba(197, 148, 170, 0.4666666667);
   color: #131313;
   font-size: 30px;
+  animation: slideInRight 1s ease-out forwards;
 }
 
-.nosotros-titulo {
-  text-align: center;
-  color: #131313;
-  font-size: 30px;
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .nosotros-titulo h2 {
   background-color: rgba(197, 148, 170, 0.4666666667);
+  text-align: center;
+  color: #131313;
+  font-size: 30px;
+  animation: slideinleft 2s ease-out forwards;
 }
-
-.nosotros {
+.nosotros-titulo .nosotros {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 10px;
   padding: 10px;
 }
-.nosotros img {
+.nosotros-titulo .nosotros img {
   width: 550px;
   height: 550px;
   border-radius: 20px;
 }
-.nosotros p {
+.nosotros-titulo .nosotros p {
   font-size: 25px;
   background-color: rgba(197, 148, 170, 0.4666666667);
   color: #131313;
@@ -158,6 +173,16 @@ nav form .d-flex {
   text-align: center;
 }
 
+@keyframes slideinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .testimonios h2 {
   text-align: center;
   background-color: #f1f1f1;
@@ -278,6 +303,7 @@ nav form .d-flex {
   justify-content: space-around;
   margin: 15px;
   padding: 15px;
+  flex-wrap: wrap;
 }
 .tarjetas-secciones .tarjetas div {
   text-align: center;
@@ -285,6 +311,13 @@ nav form .d-flex {
   margin: 15px;
   padding: 15px;
   height: 375px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjetas-secciones .tarjetas div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 .tarjetas-secciones .tarjetas div img {
   width: 250px;
@@ -312,6 +345,11 @@ nav form .d-flex {
   color: #131313;
   margin: 0%;
   padding: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation: fadeSlideUp 0.3s ease forwards;
+  animation-delay: 0.3s;
 }
 .productos h2 {
   text-align: center;
@@ -320,27 +358,54 @@ nav form .d-flex {
   font-size: 30px;
   margin-bottom: 2px;
   padding: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation: fadeSlideUp 0.5s ease forwards;
+  animation-delay: 0.5s;
 }
 .productos p {
   font-size: 25px;
-  margin: 20px;
-  text-align: center;
   color: #131313;
   padding: 20px;
+  text-align: center;
   background-color: #f1f1f1;
+  max-width: 3000px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation: fadeSlideUp 0.7s ease forwards;
+  animation-delay: 0.7s;
 }
 
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*---REGISTRATE---*/
 .formulario {
   display: flex;
   justify-content: center;
   background-image: url(../img/fondo2.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.9s ease forwards;
 }
 .formulario form {
   margin: 35px;
   background-color: #f1f1f1;
   padding: 35px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 1s;
 }
 .formulario form div label {
   font-size: 22px;
@@ -360,6 +425,11 @@ nav form .d-flex {
   justify-content: center;
   background-image: url(../img/fondo2.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 0.8s ease forwards;
 }
 .formulario-personalizados form {
   display: flex;
@@ -370,6 +440,11 @@ nav form .d-flex {
   color: #131313;
   background-color: #f1f1f1;
   padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 1s;
 }
 .formulario-personalizados form div {
   padding: 5px;
@@ -645,6 +720,9 @@ footer .redes .caja-footer p {
   .testimonios .grid-testimonios .testimonio h3 {
     font-size: 8px;
   }
+  .testimonios .grid-testimonios .testimonio::before {
+    font-size: 70px;
+  }
   .testimonios h2 {
     font-size: 20px;
   }
@@ -659,6 +737,10 @@ footer .redes .caja-footer p {
   }
   .productos p {
     font-size: 16px;
+  }
+  .productos-destacados .tarjetas-inicio {
+    margin: 5px;
+    padding: 5px;
   }
   .productos-destacados h2 {
     font-size: 15px;

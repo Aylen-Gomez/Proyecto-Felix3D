@@ -5,11 +5,11 @@
             background-color: $sexto-color;
             border-radius: 20px;
             padding: 5px;
-            width: 1000px;
+            width: 60%;
             text-align: center;
             margin: 0 auto;
             transition-duration: 2s;
-            transition-property: width; 
+            transition-property: width;
 
             &:hover {
                 width: 100%;
@@ -21,13 +21,13 @@
             background-color: $sexto-color;
             border-radius: 20px;
             padding: 5px;
-            width: 1200px;
+            width: 90%;
             max-height: 100px;
             text-align: center;
             margin: 0 auto;
             margin-bottom: 10px;
             transition-duration: 2s;
-            transition-property: width; 
+            transition-property: width;
 
             &:hover {
                 width: 100%;
@@ -48,6 +48,13 @@
             padding: 15px;
             background-color: $quinto-color;
             height: 375px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
 
             img {
                 width: 250px;
@@ -80,44 +87,75 @@
         background-color: $sexto-color;
         color: $cuarto-color;
         font-size: nth($font-size, 5);
+        animation: slideInRight 1s ease-out forwards;
     }
 
+
 }
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
 
 .nosotros-titulo {
-    text-align: center;
-    color: $cuarto-color;
-    font-size: nth($font-size, 5);
-
     h2 {
         background-color: $sexto-color;
-    }
-}
-
-.nosotros {
-    @include flex(flex, space-evenly);
-    align-items: center;
-    margin: 10px;
-    padding: 10px;
-
-    img {
-        width: 550px;
-        height: 550px;
-        border-radius: 20px;
-    }
-
-    p {
-        font-size: nth($font-size, 4);
-        background-color: $sexto-color;
-        color: $cuarto-color;
-        border-radius: 12px;
-        width: 50%;
-        height: 50%;
-        margin: 15px;
-        padding: 30px;
         text-align: center;
+        color: $cuarto-color;
+        font-size: nth($font-size, 5);
+        animation: slideinleft 2s ease-out forwards;
+    }
+
+
+    .nosotros {
+        @include flex(flex, space-evenly);
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+
+        img {
+            width: 550px;
+            height: 550px;
+            border-radius: 20px;
+        }
+
+        p {
+            font-size: nth($font-size, 4);
+            background-color: $sexto-color;
+            color: $cuarto-color;
+            border-radius: 12px;
+            width: 50%;
+            height: 50%;
+            margin: 15px;
+            padding: 30px;
+            text-align: center;
+        }
     }
 }
+
+@keyframes slideinleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 
 .testimonios {
