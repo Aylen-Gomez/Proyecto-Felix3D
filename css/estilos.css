@@ -28,6 +28,21 @@ p::selection {
   color: #8b6576;
 }
 
+h1::selection {
+  background-color: #f1f1f1;
+  color: #8b6576;
+}
+
+h2::selection {
+  background-color: #f1f1f1;
+  color: #8b6576;
+}
+
+h3::selection {
+  background-color: #f1f1f1;
+  color: #8b6576;
+}
+
 nav {
   background-color: #131313 !important;
 }
@@ -58,7 +73,7 @@ nav form .d-flex {
 
 .hero div h1 {
   font-size: 35px;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   border-radius: 20px;
   padding: 5px;
   width: 60%;
@@ -72,7 +87,7 @@ nav form .d-flex {
 }
 .hero div p {
   font-size: 25px;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   border-radius: 20px;
   padding: 5px;
   width: 90%;
@@ -126,7 +141,7 @@ nav form .d-flex {
 }
 .productos-destacados h2 {
   text-align: center;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   color: #131313;
   font-size: 30px;
   animation: slideInRight 1s ease-out forwards;
@@ -143,7 +158,7 @@ nav form .d-flex {
   }
 }
 .nosotros-titulo h2 {
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   text-align: center;
   color: #131313;
   font-size: 30px;
@@ -163,7 +178,7 @@ nav form .d-flex {
 }
 .nosotros-titulo .nosotros p {
   font-size: 25px;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   color: #131313;
   border-radius: 12px;
   width: 50%;
@@ -259,6 +274,18 @@ nav form .d-flex {
   transform: scale(1.3);
 }
 
+.carousel-item {
+  text-align: center;
+  background-color: #c594aa;
+}
+.carousel-item a {
+  text-decoration: none;
+}
+.carousel-item a h2 {
+  font-size: 20px !important;
+  color: #131313;
+}
+
 .bi-arrow-return-right {
   color: #8b6576;
 }
@@ -295,12 +322,12 @@ nav form .d-flex {
   background-color: white !important;
 }
 .aside aside div h2 button:focus {
-  border-color: rgba(197, 148, 170, 0.4666666667);
-  box-shadow: 0 0 0 0.25rem rgba(197, 148, 170, 0.4666666667);
+  border-color: rgba(197, 148, 170, 0.1843137255);
+  box-shadow: 0 0 0 0.25rem rgba(197, 148, 170, 0.1843137255);
 }
 .aside aside div h2 button:hover {
-  border-color: rgba(197, 148, 170, 0.4666666667);
-  box-shadow: 0 0 0 0.25rem rgba(197, 148, 170, 0.4666666667);
+  border-color: rgba(197, 148, 170, 0.1843137255);
+  box-shadow: 0 0 0 0.25rem rgba(197, 148, 170, 0.1843137255);
 }
 .aside aside div h2 button:not(.collapsed) {
   border-color: inherit;
@@ -317,7 +344,7 @@ nav form .d-flex {
 }
 .tarjetas-secciones h2 {
   text-align: center;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   color: #131313;
   font-size: 30px;
   border-radius: 13px;
@@ -366,7 +393,7 @@ nav form .d-flex {
 /*!--- PERSONALIZADOS-REGISTRATE-SERVICIOS---*/
 .productos h1 {
   text-align: center;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   color: #131313;
   margin: 0%;
   padding: 5px;
@@ -378,7 +405,7 @@ nav form .d-flex {
 }
 .productos h2 {
   text-align: center;
-  background-color: rgba(197, 148, 170, 0.4666666667);
+  background-color: rgba(197, 148, 170, 0.1843137255);
   color: #131313;
   font-size: 30px;
   margin-bottom: 2px;
@@ -500,6 +527,35 @@ nav form .d-flex {
   margin-top: 2px;
 }
 
+/*? PREGUNTAS */
+.acordeon {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  margin: 20px;
+}
+.acordeon .accordion {
+  max-width: 1000px;
+  width: 100%;
+}
+.acordeon .accordion .accordion-item {
+  margin-bottom: 25px;
+}
+
+.preguntas h1 {
+  text-align: center;
+  background-color: rgba(197, 148, 170, 0.1843137255);
+  color: #131313;
+  font-size: 40px;
+  margin: 0%;
+  padding: 5px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation: fadeSlideUp 0.3s ease forwards;
+  animation-delay: 0.3s;
+}
+
 footer {
   background-color: #131313;
 }
@@ -611,17 +667,17 @@ footer .redes .caja-footer p {
   .nosotros-titulo {
     font-size: 20px;
   }
-  .nosotros {
+  .nosotros-titulo .nosotros {
     flex-direction: column;
     margin: 10px;
     padding: 10px;
   }
-  .nosotros img {
+  .nosotros-titulo .nosotros img {
     order: 2;
     width: 300px;
     height: 300px;
   }
-  .nosotros p {
+  .nosotros-titulo .nosotros p {
     order: 1;
     font-size: 20px;
     width: 80%;
@@ -728,7 +784,7 @@ footer .redes .caja-footer p {
   .aside aside {
     width: 100%;
   }
-  .nosotros p {
+  .nosotros-titulo .nosotros p {
     font-size: 15px;
   }
   .testimonios .grid-testimonios {
