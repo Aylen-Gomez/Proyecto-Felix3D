@@ -243,13 +243,15 @@
     .accordion {
         max-width: 1000px;
         width: 100%;
-        .accordion-item{
+
+        .accordion-item {
             margin-bottom: 25px;
         }
     }
 }
-.preguntas{
-    h1{
+
+.preguntas {
+    h1 {
         text-align: center;
         background-color: $sexto-color;
         color: $cuarto-color;
@@ -264,6 +266,3 @@
 
     }
 }
-
-
-
