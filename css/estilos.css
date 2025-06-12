@@ -269,6 +269,7 @@ nav form .d-flex {
   bottom: 50px;
   right: 20px;
   transition: 0.6s;
+  z-index: 2;
 }
 .fixed:hover {
   transform: scale(1.3);
