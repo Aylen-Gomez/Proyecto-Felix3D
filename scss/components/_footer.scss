@@ -10,6 +10,8 @@ footer {
 
     .redes {
         display: flex;
+        padding: 10px;
+        margin: 0%;
 
         .logo-footer {
             img {
@@ -39,11 +41,13 @@ footer {
 
             h3 {
                 font-size: nth($font-size, 3);
+                margin: 2px;
 
             }
 
             p {
                 font-size: nth($font-size , 2 );
+                margin: 0%;
 
             }
         }
