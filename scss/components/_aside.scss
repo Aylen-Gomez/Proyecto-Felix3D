@@ -9,16 +9,18 @@
     padding: 1rem;
 
     aside {
-        width: 450px;
+        width: 300px;
         background-color: $quinto-color;
         padding: 1rem;
         border-radius: 8px;
+        flex-shrink: 0;
 
         div {
-            ol {
+            ol{
+                padding: 10px;
                 li {
                     list-style: none;
-                    font-size: nth($font-size, 3);
+                    font-size: 18px;
                     padding: 10px;
                     font-weight: bold;
 
