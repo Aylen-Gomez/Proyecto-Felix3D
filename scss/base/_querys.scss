@@ -10,15 +10,37 @@
             }
         }
     }
+.productos-destacados{
+    .tarjetas-inicio{
+        div{
+            margin: 5px;
+            padding-bottom: 20px;
+            img{
+                width: 180px;
+                height: 180px;
 
-    .productos-destacados {
+            }
+            h3{
+                font-size: nth($font-size, 2);
+            }
+            a{
+                font-size: nth($font-size, 2);
+                &:hover {
+                    font-size: 18px;
+                }
+
+            }
+        }
+    }
+}
+/*     .productos-destacados {
         .tarjetas-inicio {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             gap: 30px;
         }
-    }
+    } */
 
     .tarjetas-secciones {
         .tarjetas {
