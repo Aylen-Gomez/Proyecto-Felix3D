@@ -1,3 +1,34 @@
+@media screen and (max-width: 1600px) {
+
+    .productos-destacados {
+        .tarjetas-inicio {
+            div {
+                margin: 5px;
+                padding-bottom: 10px;
+
+                img {
+                    width: 180px;
+                    height: 180px;
+
+                }
+
+                h3 {
+                    font-size: nth($font-size, 2);
+                }
+
+                a {
+                    font-size: nth($font-size, 2);
+
+                    &:hover {
+                        font-size: 18px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1350px) {
     .hero {
         div {
@@ -10,7 +41,25 @@
             }
         }
     }
-.productos-destacados{
+
+    .productos-destacados {
+        .tarjetas-inicio {
+/*             display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            gap: 10px; */
+
+            div {
+                height: 320px;
+                width: auto;
+                margin: 10px;
+            }
+
+        }
+    }
+
+    /* .productos-destacados{
     .tarjetas-inicio{
         div{
             margin: 5px;
@@ -32,15 +81,7 @@
             }
         }
     }
-}
-/*     .productos-destacados {
-        .tarjetas-inicio {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 30px;
-        }
-    } */
+} */
 
     .tarjetas-secciones {
         .tarjetas {
@@ -58,11 +99,27 @@
 }
 
 @media screen and (max-width: 1040px) {
+
+    /* .productos-destacados{
+    .tarjetas-inicio{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        div{
+                height: 320px;
+                width: auto;
+                margin: 10px;
+        }
+
+    }
+} */
     .aside {
         aside {
-        width: 250px;
+            width: 250px;
         }
     }
+
     .tarjetas-secciones {
         .tarjetas {
             grid-template-columns: 1fr 1fr;
@@ -71,7 +128,8 @@
             gap: 10px;
             margin: 5px;
             padding: 5px;
-                div {
+
+            div {
                 height: 320px;
                 width: auto;
                 margin: 10px;
@@ -153,18 +211,18 @@
         font-size: 20px;
 
         .nosotros {
-            flex-direction: column;
+            /*             flex-direction: column;
             margin: 10px;
-            padding: 10px;
+            padding: 10px; */
 
             img {
-                order: 2;
+                /*                 order: 2; */
                 width: 300px;
                 height: 300px;
             }
 
             p {
-                order: 1;
+                /*                 order: 1; */
                 font-size: 20px;
                 width: 80%;
                 height: 80%;
@@ -179,12 +237,13 @@
 
 
 @media screen and (max-width: 930px) {
-    .tarjetas-secciones{
-        .tarjetas{
+    .tarjetas-secciones {
+        .tarjetas {
             div {
                 width: 100%;
                 height: 100%;
                 padding: 10px;
+
                 img {
                     width: 150px;
                     height: 150px;
@@ -200,6 +259,7 @@
             }
         }
     }
+
     .productos {
         h1 {
             font-size: 30px;
@@ -239,17 +299,21 @@
 }
 
 @media screen and (max-width: 720px) {
-    .aside{
+    .aside {
         gap: 5px;
-        aside{
+
+        aside {
             width: 30%;
-            .accordion-body{
+
+            .accordion-body {
                 margin: 5px;
                 padding: 5px;
-                ol{
+
+                ol {
                     padding: 0%;
-                    li{
-                        a{
+
+                    li {
+                        a {
                             font-size: 15px;
                         }
                     }
@@ -439,10 +503,11 @@
 }
 
 @media screen and (max-width: 520px) {
-.tarjetas-secciones{
-    .tarjetas{
-        div {
+    .tarjetas-secciones {
+        .tarjetas {
+            div {
                 padding: 5px;
+
                 img {
                     width: 100px;
                     height: 100px;
@@ -457,8 +522,8 @@
                 }
             }
 
+        }
     }
-}
 
     .productos-destacados {
         .tarjetas-inicio {

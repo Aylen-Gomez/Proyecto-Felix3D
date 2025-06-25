@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*     outline: 1px solid red; // solo para debug visual */
 }
 
 body {
@@ -71,21 +72,25 @@ nav form .d-flex {
   color: hsl(333, 17%, 50%);
 }
 
-.hero div h1 {
+.hero div .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero div .carousel-caption h1 {
   font-size: 35px;
   background-color: rgba(197, 148, 170, 0.1843137255);
   border-radius: 20px;
   padding: 5px;
   width: 60%;
-  text-align: center;
-  margin: 0 auto;
   transition-duration: 2s;
   transition-property: width;
 }
-.hero div h1:hover {
+.hero div .carousel-caption h1:hover {
   width: 100%;
 }
-.hero div p {
+.hero div .carousel-caption p {
   font-size: 25px;
   background-color: rgba(197, 148, 170, 0.1843137255);
   border-radius: 20px;
@@ -93,12 +98,11 @@ nav form .d-flex {
   width: 90%;
   max-height: 100px;
   text-align: center;
-  margin: 0 auto;
   margin-bottom: 10px;
   transition-duration: 2s;
   transition-property: width;
 }
-.hero div p:hover {
+.hero div .carousel-caption p:hover {
   width: 100%;
 }
 
@@ -107,6 +111,7 @@ nav form .d-flex {
   padding: 15px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .productos-destacados .tarjetas-inicio div {
   text-align: center;
@@ -264,20 +269,27 @@ nav form .d-flex {
     transform: translateY(0);
   }
 }
-.fixed {
-  position: fixed;
-  z-index: 2;
-  bottom: 50px;
-  right: 20px;
-  transition: 0.6s;
-}
-.fixed:hover {
-  transform: scale(1.3);
-}
+/* .fixed {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.6s;
+    max-width: 60px;
+    width: 15vw;
+    height: auto;
 
+    &:hover {
+        transform: scale(1.3);
+    }
+} */
 .carousel-item {
   text-align: center;
   background-color: #c594aa;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
 }
 .carousel-item a {
   text-decoration: none;
@@ -605,16 +617,10 @@ footer .redes .caja-footer p {
   margin: 0%;
 }
 
-@media screen and (max-width: 1350px) {
-  .hero div h1 {
-    font-size: 25px;
-  }
-  .hero div p {
-    font-size: 15px;
-  }
+@media screen and (max-width: 1600px) {
   .productos-destacados .tarjetas-inicio div {
     margin: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .productos-destacados .tarjetas-inicio div img {
     width: 180px;
@@ -629,14 +635,49 @@ footer .redes .caja-footer p {
   .productos-destacados .tarjetas-inicio div a:hover {
     font-size: 18px;
   }
-  /*     .productos-destacados {
-          .tarjetas-inicio {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              grid-template-rows: 1fr 1fr;
-              gap: 30px;
+}
+@media screen and (max-width: 1350px) {
+  .hero div h1 {
+    font-size: 25px;
+  }
+  .hero div p {
+    font-size: 15px;
+  }
+  .productos-destacados .tarjetas-inicio {
+    /*             display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                justify-items: center;
+                gap: 10px; */
+  }
+  .productos-destacados .tarjetas-inicio div {
+    height: 320px;
+    width: auto;
+    margin: 10px;
+  }
+  /* .productos-destacados{
+      .tarjetas-inicio{
+          div{
+              margin: 5px;
+              padding-bottom: 20px;
+              img{
+                  width: 180px;
+                  height: 180px;
+
+              }
+              h3{
+                  font-size: nth($font-size, 2);
+              }
+              a{
+                  font-size: nth($font-size, 2);
+                  &:hover {
+                      font-size: 18px;
+                  }
+
+              }
           }
-      } */
+      }
+  } */
   .tarjetas-secciones .tarjetas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -648,6 +689,20 @@ footer .redes .caja-footer p {
   }
 }
 @media screen and (max-width: 1040px) {
+  /* .productos-destacados{
+      .tarjetas-inicio{
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          justify-items: center;
+          gap: 10px;
+          div{
+                  height: 320px;
+                  width: auto;
+                  margin: 10px;
+          }
+
+      }
+  } */
   .aside aside {
     width: 250px;
   }
@@ -717,17 +772,17 @@ footer .redes .caja-footer p {
     font-size: 20px;
   }
   .nosotros-titulo .nosotros {
-    flex-direction: column;
+    /*             flex-direction: column;
     margin: 10px;
-    padding: 10px;
+    padding: 10px; */
   }
   .nosotros-titulo .nosotros img {
-    order: 2;
+    /*                 order: 2; */
     width: 300px;
     height: 300px;
   }
   .nosotros-titulo .nosotros p {
-    order: 1;
+    /*                 order: 1; */
     font-size: 20px;
     width: 80%;
     height: 80%;

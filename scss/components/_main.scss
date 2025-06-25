@@ -1,36 +1,40 @@
 .hero {
     div {
-        h1 {
-            font-size: nth($font-size, 6);
-            background-color: $sexto-color;
-            border-radius: 20px;
-            padding: 5px;
-            width: 60%;
+        .carousel-caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            margin: 0 auto;
-            transition-duration: 2s;
-            transition-property: width;
 
-            &:hover {
-                width: 100%;
+            h1 {
+                font-size: nth($font-size, 6);
+                background-color: $sexto-color;
+                border-radius: 20px;
+                padding: 5px;
+                width: 60%;
+                transition-duration: 2s;
+                transition-property: width;
+
+                &:hover {
+                    width: 100%;
+                }
             }
-        }
 
-        p {
-            font-size: nth($font-size, 4);
-            background-color: $sexto-color;
-            border-radius: 20px;
-            padding: 5px;
-            width: 90%;
-            max-height: 100px;
-            text-align: center;
-            margin: 0 auto;
-            margin-bottom: 10px;
-            transition-duration: 2s;
-            transition-property: width;
+            p {
+                font-size: nth($font-size, 4);
+                background-color: $sexto-color;
+                border-radius: 20px;
+                padding: 5px;
+                width: 90%;
+                max-height: 100px;
+                text-align: center;
+                margin-bottom: 10px;
+                transition-duration: 2s;
+                transition-property: width;
 
-            &:hover {
-                width: 100%;
+                &:hover {
+                    width: 100%;
+                }
             }
         }
     }
@@ -41,6 +45,7 @@
         margin: 15px;
         padding: 15px;
         @include flex(flex, space-around);
+        flex-wrap: wrap;
 
         div {
             text-align: center;
@@ -237,22 +242,29 @@
 }
 
 
-.fixed {
+/* .fixed {
     position: fixed;
-    z-index: 2;
-    bottom: 50px;
+    z-index: 999;
+    bottom: 20px;
     right: 20px;
     transition: 0.6s;
+    max-width: 60px;
+    width: 15vw;
+    height: auto;
 
     &:hover {
         transform: scale(1.3);
     }
-}
-
+} */
 
 .carousel-item {
     text-align: center;
     background-color: $tercer-color;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     a {
         text-decoration: none;
