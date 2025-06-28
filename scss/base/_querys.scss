@@ -70,7 +70,24 @@
 
         }
     }
+
+.testimonios {
+    .grid-testimonios {
+
+        .testimonio {
+
+            p {
+                font-size: nth($font-size, 2);
+            }
+
+            h3 {
+                font-size: nth($font-size, 3);
+            }
+        }
+    }
 }
+}
+
 
 @media screen and (max-width: 1200px) {
     .productos {

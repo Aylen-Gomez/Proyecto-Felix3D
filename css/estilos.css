@@ -226,10 +226,10 @@ nav form .d-flex {
   animation-delay: 0.9s;
 }
 .testimonios .grid-testimonios .testimonio p {
-  font-size: 15px;
+  font-size: 20px;
 }
 .testimonios .grid-testimonios .testimonio h3 {
-  font-size: 20px;
+  font-size: 25px;
 }
 .testimonios .grid-testimonios .testimonio::before {
   content: "“";
@@ -639,6 +639,12 @@ footer .redes .caja-footer p {
     height: 320px;
     width: auto;
     margin: 10px;
+  }
+  .testimonios .grid-testimonios .testimonio p {
+    font-size: 15px;
+  }
+  .testimonios .grid-testimonios .testimonio h3 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
