@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*     outline: 1px solid red; // solo para debug visual */
 }
 
 body {
@@ -72,37 +71,29 @@ nav form .d-flex {
   color: hsl(333, 17%, 50%);
 }
 
-.hero div .carousel-caption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.hero div .carousel-caption h1 {
+.hero div h1 {
   font-size: 35px;
   background-color: rgba(197, 148, 170, 0.1843137255);
   border-radius: 20px;
   padding: 5px;
-  width: 60%;
-  transition-duration: 2s;
-  transition-property: width;
+  width: 800px;
+  margin: 0 auto;
+  transition: 2s;
 }
-.hero div .carousel-caption h1:hover {
+.hero div h1:hover {
   width: 100%;
 }
-.hero div .carousel-caption p {
+.hero div p {
   font-size: 25px;
   background-color: rgba(197, 148, 170, 0.1843137255);
   border-radius: 20px;
   padding: 5px;
-  width: 90%;
-  max-height: 100px;
-  text-align: center;
   margin-bottom: 10px;
-  transition-duration: 2s;
-  transition-property: width;
+  width: 1120px;
+  margin: 0 auto;
+  transition: 2s;
 }
-.hero div .carousel-caption p:hover {
+.hero div p:hover {
   width: 100%;
 }
 
@@ -111,7 +102,6 @@ nav form .d-flex {
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 .productos-destacados .tarjetas-inicio div {
   text-align: center;
@@ -121,6 +111,8 @@ nav form .d-flex {
   height: 100%;
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+  max-width: 90vw;
 }
 .productos-destacados .tarjetas-inicio div:hover {
   transform: scale(1.05);
@@ -193,16 +185,6 @@ nav form .d-flex {
   text-align: center;
 }
 
-@keyframes slideinleft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 .testimonios h2 {
   text-align: center;
   background-color: #f1f1f1;
@@ -244,10 +226,10 @@ nav form .d-flex {
   animation-delay: 0.9s;
 }
 .testimonios .grid-testimonios .testimonio p {
-  font-size: 20px;
+  font-size: 15px;
 }
 .testimonios .grid-testimonios .testimonio h3 {
-  font-size: 15px;
+  font-size: 20px;
 }
 .testimonios .grid-testimonios .testimonio::before {
   content: "“";
@@ -269,32 +251,32 @@ nav form .d-flex {
     transform: translateY(0);
   }
 }
-/* .fixed {
-    position: fixed;
-    z-index: 999;
-    bottom: 20px;
-    right: 20px;
-    transition: 0.6s;
-    max-width: 60px;
-    width: 15vw;
-    height: auto;
+.fixed {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.6s;
+  max-width: 60px;
+  width: 15vw;
+  height: auto;
+}
+.fixed:hover {
+  transform: scale(1.3);
+}
 
-    &:hover {
-        transform: scale(1.3);
-    }
-} */
-.carousel-item {
+.item {
   text-align: center;
   background-color: #c594aa;
 }
-.carousel-item img {
-  max-width: 100%;
+.item img {
+  width: 100%;
   height: auto;
 }
-.carousel-item a {
+.item a {
   text-decoration: none;
 }
-.carousel-item a h2 {
+.item a h2 {
   font-size: 20px !important;
   color: #131313;
 }
@@ -618,6 +600,14 @@ footer .redes .caja-footer p {
 }
 
 @media screen and (max-width: 1600px) {
+  .hero div h1 {
+    font-size: 25px;
+    width: 700px;
+  }
+  .hero div p {
+    font-size: 20px;
+    width: 900px;
+  }
   .productos-destacados .tarjetas-inicio div {
     margin: 5px;
     padding-bottom: 10px;
@@ -638,71 +628,57 @@ footer .redes .caja-footer p {
 }
 @media screen and (max-width: 1350px) {
   .hero div h1 {
-    font-size: 25px;
+    font-size: 22px;
+    width: 500px;
   }
   .hero div p {
     font-size: 15px;
-  }
-  .productos-destacados .tarjetas-inicio {
-    /*             display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                justify-items: center;
-                gap: 10px; */
+    width: 700px;
   }
   .productos-destacados .tarjetas-inicio div {
     height: 320px;
     width: auto;
     margin: 10px;
   }
-  /* .productos-destacados{
-      .tarjetas-inicio{
-          div{
-              margin: 5px;
-              padding-bottom: 20px;
-              img{
-                  width: 180px;
-                  height: 180px;
-
-              }
-              h3{
-                  font-size: nth($font-size, 2);
-              }
-              a{
-                  font-size: nth($font-size, 2);
-                  &:hover {
-                      font-size: 18px;
-                  }
-
-              }
-          }
-      }
-  } */
-  .tarjetas-secciones .tarjetas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .productos h1 {
+    font-size: 30px;
   }
-  .tarjetas-secciones .tarjetas div {
-    justify-items: center;
+  .productos h2 {
+    font-size: 20px;
+  }
+  .productos p {
+    font-size: 18px;
+  }
+  .productos-destacados .tarjetas-inicio div {
+    margin: 5px;
+    padding-bottom: 20px;
+    height: 100%;
+  }
+  .productos-destacados .tarjetas-inicio div img {
+    width: 150px;
+    height: 150px;
+  }
+  .productos-destacados .tarjetas-inicio div h3 {
+    font-size: 13px;
+  }
+  .productos-destacados .tarjetas-inicio div a {
+    font-size: 13px;
+  }
+  .productos-destacados .tarjetas-inicio div a:hover {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 1040px) {
-  /* .productos-destacados{
-      .tarjetas-inicio{
-          grid-template-columns: 1fr 1fr;
-          grid-template-rows: 1fr 1fr;
-          justify-items: center;
-          gap: 10px;
-          div{
-                  height: 320px;
-                  width: auto;
-                  margin: 10px;
-          }
-
-      }
-  } */
+  .hero div h1 {
+    font-size: 18px;
+    width: 400px;
+  }
+  .hero div p {
+    font-size: 12px;
+    width: 600px;
+  }
   .aside aside {
     width: 250px;
   }
@@ -771,18 +747,11 @@ footer .redes .caja-footer p {
   .nosotros-titulo {
     font-size: 20px;
   }
-  .nosotros-titulo .nosotros {
-    /*             flex-direction: column;
-    margin: 10px;
-    padding: 10px; */
-  }
   .nosotros-titulo .nosotros img {
-    /*                 order: 2; */
     width: 300px;
     height: 300px;
   }
   .nosotros-titulo .nosotros p {
-    /*                 order: 1; */
     font-size: 20px;
     width: 80%;
     height: 80%;
@@ -791,6 +760,14 @@ footer .redes .caja-footer p {
   }
 }
 @media screen and (max-width: 930px) {
+  .hero div h1 {
+    font-size: 15px;
+    width: 300px;
+  }
+  .hero div p {
+    font-size: 10px;
+    width: 500px;
+  }
   .tarjetas-secciones .tarjetas div {
     width: 100%;
     height: 100%;
@@ -806,14 +783,18 @@ footer .redes .caja-footer p {
   .tarjetas-secciones .tarjetas div a {
     font-size: 15px;
   }
-  .productos h1 {
-    font-size: 30px;
+  .productos-destacados .tarjetas-inicio div img {
+    width: 120px;
+    height: 120px;
   }
-  .productos p {
-    font-size: 22px;
+  .productos-destacados .tarjetas-inicio div h3 {
+    font-size: 10px;
   }
-  .productos-destacados h2 {
-    font-size: 20px;
+  .productos-destacados .tarjetas-inicio div a {
+    font-size: 10px;
+  }
+  .productos-destacados .tarjetas-inicio div a:hover {
+    font-size: 13px;
   }
   .testimonios .grid-testimonios .testimonio p {
     font-size: 13px;
@@ -871,20 +852,15 @@ footer .redes .caja-footer p {
   .formulario-personalizados form div .provincia {
     width: 100%;
   }
-  .productos-destacados .tarjetas-inicio div {
-    height: auto;
-    width: auto;
-    margin: 30px;
+  .productos-destacados h2 {
+    font-size: 20px;
   }
-  .productos-destacados .tarjetas-inicio div img {
-    width: 150px;
-    height: 150px;
-  }
-  .productos-destacados .tarjetas-inicio div h3 {
-    font-size: 15px;
-  }
-  .productos-destacados .tarjetas-inicio div a {
-    font-size: 15px;
+  .productos-destacados .tarjetas-inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
   }
   .preguntas h1 {
     font-size: 30px;
@@ -974,6 +950,17 @@ footer .redes .caja-footer p {
     width: 100px;
     height: 100px;
   }
+  .nosotros-titulo .nosotros {
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+  .nosotros-titulo .nosotros img {
+    order: 2;
+  }
+  .nosotros-titulo .nosotros p {
+    order: 1;
+  }
   footer .redes .caja-footer h3 {
     font-size: 12px;
   }
@@ -991,6 +978,13 @@ footer .redes .caja-footer p {
   }
   footer .redes div {
     line-height: 15px;
+  }
+  .nosotros-titulo .nosotros img {
+    width: 200px;
+    height: 200px;
+  }
+  .nosotros-titulo .nosotros p {
+    font-size: 10px;
   }
 }
 

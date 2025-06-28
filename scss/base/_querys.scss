@@ -1,4 +1,18 @@
 @media screen and (max-width: 1600px) {
+    .hero {
+        div {
+            h1 {
+                font-size: nth($font-size, 4);
+                width: 700px;
+            }
+
+            p {
+                font-size: nth($font-size, 3);
+                width: 900px;
+            }
+
+        }
+    }
 
     .productos-destacados {
         .tarjetas-inicio {
@@ -30,25 +44,23 @@
 }
 
 @media screen and (max-width: 1350px) {
+
     .hero {
         div {
             h1 {
-                font-size: 25px;
+                font-size: 22px;
+                width: 500px;
             }
 
             p {
                 font-size: 15px;
+                width: 700px;
             }
         }
     }
 
     .productos-destacados {
         .tarjetas-inicio {
-/*             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-items: center;
-            gap: 10px; */
 
             div {
                 height: 320px;
@@ -58,62 +70,67 @@
 
         }
     }
+}
 
-    /* .productos-destacados{
-    .tarjetas-inicio{
-        div{
-            margin: 5px;
-            padding-bottom: 20px;
-            img{
-                width: 180px;
-                height: 180px;
+@media screen and (max-width: 1200px) {
+    .productos {
+        h1 {
+            font-size: 30px;
+        }
 
-            }
-            h3{
-                font-size: nth($font-size, 2);
-            }
-            a{
-                font-size: nth($font-size, 2);
-                &:hover {
-                    font-size: 18px;
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .productos-destacados {
+        .tarjetas-inicio {
+            div {
+                margin: 5px;
+                padding-bottom: 20px;
+                height: 100%;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+
                 }
 
+                h3 {
+                    font-size: 13px;
+                }
+
+                a {
+                    font-size: 13px;
+
+                    &:hover {
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
-} */
-
-    .tarjetas-secciones {
-        .tarjetas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 30px;
-
-            div {
-                justify-items: center;
-            }
-        }
-    }
-
 }
 
 @media screen and (max-width: 1040px) {
+    .hero {
+        div {
+            h1 {
+                font-size: 18px;
+                width: 400px;
+            }
 
-    /* .productos-destacados{
-    .tarjetas-inicio{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        gap: 10px;
-        div{
-                height: 320px;
-                width: auto;
-                margin: 10px;
+            p {
+                font-size: 12px;
+                width: 600px;
+            }
         }
-
     }
-} */
+
     .aside {
         aside {
             width: 250px;
@@ -211,18 +228,13 @@
         font-size: 20px;
 
         .nosotros {
-            /*             flex-direction: column;
-            margin: 10px;
-            padding: 10px; */
 
             img {
-                /*                 order: 2; */
                 width: 300px;
                 height: 300px;
             }
 
             p {
-                /*                 order: 1; */
                 font-size: 20px;
                 width: 80%;
                 height: 80%;
@@ -237,6 +249,20 @@
 
 
 @media screen and (max-width: 930px) {
+    .hero {
+        div {
+            h1 {
+                font-size: 15px;
+                width: 300px;
+            }
+
+            p {
+                font-size: 10px;
+                width: 500px;
+            }
+        }
+    }
+
     .tarjetas-secciones {
         .tarjetas {
             div {
@@ -260,19 +286,32 @@
         }
     }
 
-    .productos {
-        h1 {
-            font-size: 30px;
-        }
+    .productos-destacados {
+        .tarjetas-inicio {
+            div {
 
-        p {
-            font-size: 22px;
+                img {
+                    width: 120px;
+                    height: 120px;
+
+                }
+
+                h3 {
+                    font-size: nth($font-size, 1);
+                }
+
+                a {
+                    font-size: nth($font-size, 1);
+
+                    &:hover {
+                        font-size: 13px;
+                    }
+                }
+            }
         }
     }
 
-    .productos-destacados h2 {
-        font-size: 20px;
-    }
+
 
     .testimonios {
         .grid-testimonios {
@@ -294,8 +333,6 @@
         width: 50px;
         height: 50px;
     }
-
-
 }
 
 @media screen and (max-width: 720px) {
@@ -371,27 +408,17 @@
         }
     }
 
-
     .productos-destacados {
+        h2 {
+            font-size: 20px;
+        }
+
         .tarjetas-inicio {
-            div {
-                height: auto;
-                width: auto;
-                margin: 30px;
-
-                img {
-                    width: 150px;
-                    height: 150px;
-                }
-
-                h3 {
-                    font-size: 15px;
-                }
-
-                a {
-                    font-size: 15px;
-                }
-            }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            gap: 10px;
         }
     }
 
@@ -540,6 +567,24 @@
         }
     }
 
+    .nosotros-titulo {
+
+        .nosotros {
+            flex-direction: column;
+            margin: 10px;
+            padding: 10px;
+
+            img {
+                order: 2;
+            }
+
+            p {
+                order: 1;
+            }
+
+        }
+    }
+
     footer {
         .redes {
             .caja-footer {
@@ -563,6 +608,7 @@
     }
 }
 
+
 @media screen and (max-width: 400px) {
     .trajetas-secciones {
         .tarjetas {
@@ -579,6 +625,20 @@
         .redes {
             div {
                 line-height: 15px;
+            }
+        }
+    }
+
+    .nosotros-titulo {
+
+        .nosotros {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            p {
+                font-size: 10px;
             }
         }
     }
