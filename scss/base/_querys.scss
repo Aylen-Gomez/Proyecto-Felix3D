@@ -17,6 +17,7 @@
     .productos-destacados {
         .tarjetas-inicio {
             div {
+                width: auto;
                 margin: 5px;
                 padding-bottom: 10px;
 
@@ -43,6 +44,7 @@
     }
 }
 
+
 @media screen and (max-width: 1350px) {
 
     .hero {
@@ -59,33 +61,21 @@
         }
     }
 
-    .productos-destacados {
-        .tarjetas-inicio {
+    .testimonios {
+        .grid-testimonios {
 
-            div {
-                height: 320px;
-                width: auto;
-                margin: 10px;
-            }
+            .testimonio {
 
-        }
-    }
+                p {
+                    font-size: nth($font-size, 2);
+                }
 
-.testimonios {
-    .grid-testimonios {
-
-        .testimonio {
-
-            p {
-                font-size: nth($font-size, 2);
-            }
-
-            h3 {
-                font-size: nth($font-size, 3);
+                h3 {
+                    font-size: nth($font-size, 3);
+                }
             }
         }
     }
-}
 }
 
 

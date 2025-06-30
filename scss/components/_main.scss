@@ -46,10 +46,10 @@
             margin: 15px;
             padding: 15px;
             background-color: $quinto-color;
-            height: 100%;
+            height: auto;
             border-radius: 12px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 350px;
+            width: auto;
             max-width: 90vw;
 
             &:hover {
@@ -72,6 +72,7 @@
             }
 
             a {
+                margin-bottom: 10px;
                 transition: 1s;
                 @extend %boton;
 
@@ -173,7 +174,7 @@
             font-style: italic;
             margin: 20px;
             text-align: center;
-            padding: 30px;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
             font-size: nth($font-size, 3);
@@ -200,7 +201,7 @@
             }
 
             h3 {
-                font-size: nth($font-size, 4);
+                font-size: nth($font-size, 3);
             }
 
             &::before {
